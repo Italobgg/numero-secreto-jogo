@@ -14,12 +14,14 @@ function verificaChutePossuiValorValido(chute) {
   }
   if (numero === numeroSecreto) {
     document.body.innerHTML = `
+    <main>
     <h2>Acertou !!</h2>
     <h3>O número secreto era ${numeroSecreto}</h3>
 
     <button id="jogar-novamente" class="btn-jogar">
       Jogar novamente
-    </button
+    </button>
+    </main>
     `;
   } else if (numero > numeroSecreto) {
     elementoChute.innerHTML += `

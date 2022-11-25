@@ -28,7 +28,7 @@ h3 {
     margin-top: 20px;
 }
 
-.main {
+main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
