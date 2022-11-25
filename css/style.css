@@ -4,19 +4,15 @@
     --font-family: 'Patrick Hand', cursive;
     --bg-color: #B1B2FF;
     --primary-color: #EEF1FF;
+    --dark-bg-color: #222225;
+    --luzr: #f8f79a;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--primary-color);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    font-family: var(--font-family);
+    transition: 2s;
+
 }
 
 h1 {
@@ -30,6 +26,30 @@ h2 {
 h3 {
     font-size: 2em;
     margin-top: 20px;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+.mudar-tema {
+    color: var(--luzr);
+    font-size: 50px;
+    padding: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.tema-escuro {
+    background-color: var(--dark-bg-color);
+    color: var(--bg-color);
 }
 
 .mensagem {
@@ -54,4 +74,8 @@ h3 {
     font-family: var(--font-family);
     font-size: 1.5em;
     color: var(--bg-color);
+}
+
+#btn-tema {
+    display: none;
 }
